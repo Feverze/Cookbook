@@ -1,5 +1,5 @@
 // Wine Pairing JS
-const apiKey = "4c0d9daab8f64b988bca334418651193"; // Replace 'YOUR_API_KEY' with your actual Spoonacular API key
+const apiKey = ?; // Replace 'YOUR_API_KEY' with your actual Spoonacular API key
 
 function getWinePairing() {
   const food = document.getElementById("foodInput").value;
