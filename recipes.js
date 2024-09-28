@@ -7,7 +7,7 @@
 //api url: ?
 
 const recipesContainer = document.getElementById("recipesContainer");
-const apiKey = "4c0d9daab8f64b988bca334418651193";
+const apiKey = ?;
 
 document.addEventListener("DOMContentLoaded", async () => {
   for (let i = 0; i < 10; i++) {
