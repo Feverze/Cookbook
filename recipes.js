@@ -1,10 +1,10 @@
 //using meal db as api to get random meal
-//api key: 1
-//api url: www.themealdb.com/api/json/v1/1/random.php
+//api key: ?
+//api url: ?
 
 //using spoonacular api
-//api key: 4c0d9daab8f64b988bca334418651193
-//api url: https://api.spoonacular.com/food/wine/pairing
+//api key: ?
+//api url: ?
 
 const recipesContainer = document.getElementById("recipesContainer");
 const apiKey = "4c0d9daab8f64b988bca334418651193";
