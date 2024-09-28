@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Christine's Forum</title>
+    <link
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      rel="stylesheet"
+    >
+    <link href="styles/style.css" rel="stylesheet">
+    <link rel="stylesheet" href="recipes.html">
+  </head>
+
+  <!-- Recipe Submission Form -->
+  <body>
+    <!-- Header and Navigation -->
+    <header class="container-fluid text-center py-3">
+      <nav class="navbar navbar-expand-lg navbar-light">
+        <div class="container-fluid">
+          <a class="navbar-brand">Christine's Cookbook</a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-toggle="collapse"
+            data-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+              <li class="nav-item">
+                <a class="nav-link" href="index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="recipes.html">Find Recipes</a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link" href="savedRecipes.html">Saved Recipes</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="forum.html">Forum</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="wine-pairing.html">Wine Pairing</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <section class="container mt-5">
+      <h2>Submit Your Recipe</h2>
+      <form
+        id="forumForm"
+        action="/submit-recipe"
+        method="POST"
+        enctype="multipart/form-data"
+      >
+        <div class="form-group">
+          <label for="recipeName">Recipe Name</label>
+          <input
+            type="text"
+            class="form-control"
+            id="recipeName"
+            name="recipeName"
+            required
+          />
+        </div>
+        <div class="form-group">
+          <label for="ingredients">Ingredients</label>
+          <textarea
+            class="form-control"
+            id="ingredients"
+            name="ingredients"
+            rows="5"
+            required
+          ></textarea>
+        </div>
+        <div class="form-group">
+          <label for="preparation">Preparation Steps</label>
+          <textarea
+            class="form-control"
+            id="preparation"
+            name="preparation"
+            rows="5"
+            required
+          ></textarea>
+        </div>
+        <div class="form-group">
+          <label for="recipePhoto">Recipe Photo</label>
+          <input
+            type="file"
+            class="form-control-file"
+            id="recipePhoto"
+            name="recipePhoto"
+          />
+        </div>
+        <button type="submit" class="btn btn-submit">Submit Recipe</button>
+      </form>
+    </section>
+    <script src="scripts/forum.js"></script>
+  </body>
+</html>
+`;

@@ -1,0 +1,123 @@
+/* Color Theme:
+Rich Red: #c24242;
+Soft Red: #e36262;
+Light Red: #ff8484;
+Pale Red: #ff9f9f;
+Pastel Red: #ffcaca;
+Black: #000000;
+White: #FFFFFF;
+*/
+
+/* General Body Styling */
+body {
+  background-color: #ffcaca; /* Pastel Red for the body background */
+  color: #000000; /* Black text */
+}
+
+/* Header Styles */
+header {
+  background-color: #c24242; /* Rich Red for the header */
+  color: #ffffff; /* White text  */
+  font-weight: bold;
+}
+
+header .navbar-light .navbar-nav .nav-link {
+  color: #000000;
+  font-size: 1.25rem;
+}
+
+/* For hover state */
+header .navbar-light .navbar-nav .nav-link:hover {
+  color: #ffcaca;
+}
+
+/* Main Content Area */
+main {
+  padding: 20px;
+  background-color: #ffffff; /* White background for the main content area */
+
+  box-shadow: 0 2px 4px #000000; /* Black shadow  */
+}
+
+article {
+  padding: 20px;
+  background-color: #ffffff; /* White background for the main content area */
+}
+
+/* Sidebar Styles */
+aside.left-sidebar,
+aside.right-sidebar {
+  background-color: #e36262; /* Soft Red for sidebars */
+  color: #000000; /* Black text */
+  padding: 20px; /* Padding for sidebars */
+  border-radius: 5px; /* Rounded corners */
+}
+
+/* Centering the content of sidebars and the main article */
+.aside,
+.article {
+  text-align: center;
+}
+
+.img-Chef {
+  display: block; /* Make the image a block-level element if it's not already */
+  margin-left: auto; /* Center the image horizontally */
+  margin-right: auto;
+  max-width: 100%; /* Make the image responsive */
+}
+
+/* Footer Styles */
+footer {
+  background-color: #c24242; /* Rich Red for the footer */
+  color: #ffffff; /* White text */
+  padding: 20px 0; /* Padding to the top and bottom */
+}
+
+/* Call to Action Buttons and Links */
+
+.btn-submit {
+  background-color: #ffffff; /* white */
+  color: #000000; /* Black text */
+}
+
+.btn-submit:hover {
+  background-color: #c24242; /* Rich Red background on hover */
+  color: #ffffff; /* White text on hover */
+}
+
+a {
+  color: #000000;
+}
+
+a:hover {
+  color: #ff9f9f; /* Pale Red for link hover state */
+  text-decoration: none; /* Removes underline on hover */
+}
+
+/* Section Highlighting */
+.section-highlight {
+  background-color: #e36262; /* Soft Red for highlighted sections */
+  color: #000000; /* Black text */
+}
+
+/* Add this CSS to your existing stylesheet or create a new one */
+.recipe-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 20px;
+}
+
+.recipe-grid .card {
+  width: 100%;
+}
+
+/* Responsive Design Adjustments */
+@media (min-width: 768px) {
+  .nav-link {
+    padding-left: 20px;
+  }
+  .left-sidebar,
+  .right-sidebar {
+    padding: 20px;
+  }
+}
